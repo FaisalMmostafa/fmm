@@ -1,0 +1,84 @@
+
+# #if-else
+calculation_to_units = 24*60*60
+name_of_unit = "seconds"
+#
+# def days_to_units(user_input_number):
+#     if user_input_number > 0:
+#         return f"{user_input_number} days are {user_input_number * calculation_to_units} {name_of_unit}"
+#     elif user_input_number == 0:
+#         return "put another digit!"
+#     else:
+#         return "wrong number"
+#
+# def validate_and_execute():
+#      if user_input.isdigit():
+#         user_input_number = int(user_input)
+#         calculated_value = days_to_units(user_input_number)
+#         print(calculated_value)
+#      else:
+#         print("not valid")
+# user_input = input("hey user, enter a number of days and i will convert to hours!\n")
+# validate_and_execute()
+
+##nested
+
+# def days_to_units(user_input_number):
+#        return f"{user_input_number} days are {user_input_number * calculation_to_units} {name_of_unit}"
+#
+#
+# def validate_and_execute():
+#     if user_input.isdigit():
+#         user_input_number = int(user_input)
+#         if user_input_number > 0:
+#            calculated_value = days_to_units(user_input_number)
+#            print(calculated_value)
+#         elif user_input_number == 0:
+#             print("u entered 0, please enter a valid number")
+#
+#     else:
+#         print("not valid")
+#
+# user_input = input("hey user, enter a number of days and i will convert to hours!\n")
+# validate_and_execute()
+
+## try-except
+
+
+def days_to_units(user_input_number):
+    return f"{user_input_number} days are {user_input_number * calculation_to_units} {name_of_unit}"
+
+
+def validate_and_execute():
+    try:
+
+        user_input_number = int(user_input)
+        if user_input_number > 0:
+            calculated_value = days_to_units(user_input_number)
+            print(calculated_value)
+        elif user_input_number == 0:
+            print("u entered 0, please enter a valid number")
+
+    except:
+        print("not valid")
+
+
+user_input = input("hey user, enter a number of days and i will convert to hours!\n")
+validate_and_execute()
+
+# calculation_to_units = 24*60*60
+# name_of_unit = "seconds"
+#
+# def days_to_units(user_input_number):
+#     if user_input_number > 0:
+#         return f"{user_input_number} days are {user_input_number * calculation_to_units} {name_of_unit}"
+#     elif user_input_number == 0:
+#         return "put another digit!"
+#     else:
+#         return "wrong number"
+#
+#
+# user_input = input("hey user, enter a number of days and i will convert to hours!\n")
+# user_input_number = int(user_input)
+# cal_value=days_to_units(user_input_number)
+# print(cal_value)
